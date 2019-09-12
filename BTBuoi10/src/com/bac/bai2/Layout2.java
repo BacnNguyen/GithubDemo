@@ -7,18 +7,21 @@ import java.awt.event.MouseListener;
 
 public class Layout2 extends JPanel implements MouseListener {
     public Layout2() {
+        setSize(GUI.W_FRAME,GUI.H_FRAME);
         setLayout(null);
         setBackground(Color.BLACK);
         addMouseListener(this);
-        Panel2 lefttop = new Panel2(0,0,120,120,"RED","lefttop");
-        Panel2 top = new Panel2(240,0,120,120,"BLUE","top");
-        Panel2 righttop = new Panel2(480,0,120,120,"RED","righttop");
-        Panel2 left = new Panel2(0,240,120,120,"BLACK","left");
-        Panel2 center = new Panel2(240,240,120,120,"GRAY","center");
-        Panel2 right = new Panel2(480,240,120,120,"PINK","right");
-        Panel2 leftbottom = new Panel2(0,480,120,120,"RED","leftbottom");
-        Panel2 bottom = new Panel2(240,480,120,120,"YELLOW","bottom");
-        Panel2 rightbottom = new Panel2(480,480,120,120,"RED","rightbottom");
+        int size = (GUI.H_FRAME-40)/5;
+        int size1 = GUI.W_FRAME/5-3;
+        Panel2 lefttop = new Panel2(0,0,size1,size,"RED","lefttop");
+        Panel2 top = new Panel2(2*size1,0,size1,size,"BLUE","top");
+        Panel2 righttop = new Panel2(4*size1,0,size1,size,"RED","righttop");
+        Panel2 left = new Panel2(0,2*size,size1,size,"BLACK","left");
+        Panel2 center = new Panel2(2*size1,size*2,size1,size,"GRAY","center");
+        Panel2 right = new Panel2(4*size1,2*size,size1,size,"PINK","right");
+        Panel2 leftbottom = new Panel2(0,4*size,size1,size,"RED","leftbottom");
+        Panel2 bottom = new Panel2(2*size1,4*size,size1,size,"YELLOW","bottom");
+        Panel2 rightbottom = new Panel2(4*size1,4*size,size1,size,"RED","rightbottom");
 
         add(top);
         add(bottom);
@@ -39,7 +42,7 @@ public class Layout2 extends JPanel implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-//        setBackground(Color.RED);
+
     }
 
     @Override

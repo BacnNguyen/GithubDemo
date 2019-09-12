@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GUI extends JFrame {
-    public static final  int W_FRAME =615;
-    public static final  int H_FRAME = 635;
+    public static final  int W_FRAME =600;
+    public static final  int H_FRAME = 600;
 
     public GUI() {
         setSize(W_FRAME,H_FRAME);
-        setResizable(true);
+        setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 //        Layout1 layout1 = new Layout1();
