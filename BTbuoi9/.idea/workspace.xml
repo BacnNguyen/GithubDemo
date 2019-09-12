@@ -75,11 +75,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+<<<<<<< HEAD
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="280" />
     <option name="width" value="1005" />
     <option name="height" value="680" />
+=======
+>>>>>>> b9732d9ac6b24166d77c329af00363f63bdcb36e
   </component>
   <component name="ProjectId" id="1QUB0TnwOftu36ooHBIkWDbuKgq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -132,7 +135,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Buoi10" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LTHDT/BTLuyentap2" />
+>>>>>>> b9732d9ac6b24166d77c329af00363f63bdcb36e
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -195,10 +202,14 @@
       <option name="presentableId" value="Default" />
       <updated>1567815071327</updated>
       <workItem from="1567815072906" duration="12093000" />
+<<<<<<< HEAD
       <workItem from="1568108047494" duration="110000" />
       <workItem from="1568108222382" duration="116000" />
       <workItem from="1568113075597" duration="2251000" />
       <workItem from="1568274270276" duration="30000" />
+=======
+      <workItem from="1567828152052" duration="1284000" />
+>>>>>>> b9732d9ac6b24166d77c329af00363f63bdcb36e
     </task>
     <servers />
   </component>
@@ -248,12 +259,16 @@
         <entry key="MAIN">
           <value>
             <State>
+<<<<<<< HEAD
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+=======
+              <option name="COLUMN_ORDER" />
+>>>>>>> b9732d9ac6b24166d77c329af00363f63bdcb36e
             </State>
           </value>
         </entry>
