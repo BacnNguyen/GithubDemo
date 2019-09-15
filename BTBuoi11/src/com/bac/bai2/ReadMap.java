@@ -2,9 +2,7 @@ package com.bac.bai2;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.util.Scanner;
 
 public class ReadMap {
@@ -19,22 +17,17 @@ public class ReadMap {
     private Image img4;
     private Image img5;
 
-    public ReadMap(String path, int mapSize) throws FileNotFoundException {
+    public ReadMap(String path, int mapSize) throws IOException {
         File file = new File(path);
         this.mapSize = mapSize;
-        Scanner sc = null;
-        try {
-            sc = new Scanner(new FileReader(file));
-        }catch (FileNotFoundException e){
-            e.getStackTrace();
-        }
+        BufferedReader br = new BufferedReader(new FileReader(file));
 
-        WIDTH = Integer.parseInt(sc.nextLine());
-        HEIGHT = Integer.parseInt(sc.nextLine());
+        WIDTH = Integer.parseInt(br.readLine());
+        HEIGHT = Integer.parseInt(br.readLine());
         maxtr = new int[HEIGHT][WIDTH];
         String line;
         for (int i = 0; i <HEIGHT ; i++) {
-            line = sc.nextLine();
+            line = br.readLine();
             for (int j = 0; j < WIDTH; j++) {
                 maxtr[i][j] = Integer.parseInt(line.charAt(j)+"");
             }

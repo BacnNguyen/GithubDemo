@@ -3,11 +3,12 @@ package com.bac.bai2;
 import javax.swing.*;
 import java.awt.*;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class GamePanel  extends JPanel {
     private ReadMap map;
     private   String path = "C:\\Users\\Admin\\Desktop\\Bac\\BTBuoi9\\BTBuoi11\\src\\com\\bac\\bai2\\mapTank\\map2.txt";
-    public GamePanel() throws FileNotFoundException {
+    public GamePanel() throws IOException {
         setBackground(Color.BLUE);
         map= new ReadMap(path,30);
     }
