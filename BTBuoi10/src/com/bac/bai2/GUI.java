@@ -12,8 +12,8 @@ public class GUI extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-//        Layout1 layout1 = new Layout1();
-//        add(layout1);
+        Layout1 layout1 = new Layout1();
+        add(layout1);
         Layout2 layout2 = new Layout2();
         add(layout2);
     }

@@ -12,7 +12,7 @@ public class Layout2 extends JPanel implements MouseListener {
         setBackground(Color.BLACK);
         addMouseListener(this);
         int size = (GUI.H_FRAME-40)/5;
-        int size1 = GUI.W_FRAME/5-3;
+        int size1 = GUI.W_FRAME/5;
         Panel2 lefttop = new Panel2(0,0,size1,size,"RED","lefttop");
         Panel2 top = new Panel2(2*size1,0,size1,size,"BLUE","top");
         Panel2 righttop = new Panel2(4*size1,0,size1,size,"RED","righttop");
