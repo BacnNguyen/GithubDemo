@@ -9,6 +9,6 @@ public class Main {
         //fileManager.readAllFile(new File("D:/ANDROID"));
         /*fileManager.write();
         fileManager.read();*/
-        fileManager.downLoad("https://vredir.nixcdn.com/PreNCT15/XaLyricVideo-MasewAPJ-5838975.mp4?st=C5L--NkSxAInIrLgrdUQRg&e=1567776140&t=1567689736369");
+        //fileManager.downLoad("https://vredir.nixcdn.com/PreNCT15/XaLyricVideo-MasewAPJ-5838975.mp4?st=C5L--NkSxAInIrLgrdUQRg&e=1567776140&t=1567689736369");
     }
 }
