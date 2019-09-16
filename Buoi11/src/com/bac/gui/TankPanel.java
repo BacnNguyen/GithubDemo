@@ -7,11 +7,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 
 public class TankPanel extends JPanel implements KeyListener ,Runnable{
     private GameManager manager = new GameManager();//hiển thị đối tượng gameManager
     private boolean[] flags = new boolean[256];
-    public TankPanel() {
+    public TankPanel() throws IOException {
         setBackground(Color.BLACK);
         manager.initGame();
         setFocusable(true);
@@ -90,7 +91,11 @@ public class TankPanel extends JPanel implements KeyListener ,Runnable{
                         JOptionPane.QUESTION_MESSAGE);
                 if(result==JOptionPane.YES_OPTION) {
                     flags = new boolean[256];
-                    manager.initGame();
+                    try {
+                        manager.initGame();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
                 else System.exit(0);
             }

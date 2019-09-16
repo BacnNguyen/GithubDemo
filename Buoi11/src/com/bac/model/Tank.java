@@ -2,8 +2,10 @@ package com.bac.model;
 
 import com.bac.gui.TankFrame;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Date;
 
 public abstract class Tank {
 
@@ -19,7 +21,6 @@ public abstract class Tank {
     protected int speed = 1;
     private long time;
 
-
     public Tank(int x, int y, int orient) {
         this.x = x;
         this.y = y;
@@ -30,8 +31,13 @@ public abstract class Tank {
         g2d.drawImage(images[orient], x, y, null);
     }
 
+    public void drawRect(Graphics2D g2d){
+        g2d.setStroke(new BasicStroke(5));
+        g2d.setColor(Color.blue);
+        g2d.drawRect(x,y,images[orient].getWidth(null),images[orient].getHeight(null));
+    }
 
-    public void move() {
+    public void move(ArrayList<Brick> arr) {
         int xR = x;
         int yR = y;
         switch (orient) {
@@ -54,6 +60,11 @@ public abstract class Tank {
         if( y <= 0 || y >= TankFrame.H_FRAME - images[orient].getHeight(null)-35) {
             y=yR;
         }
+        boolean check = checkTouch(arr);
+            if(check) {
+                int result = JOptionPane.showConfirmDialog(null, "Continue?", "Touch", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                if(result==JOptionPane.NO_OPTION) System.exit(0);
+            }
     }
 
     public void fire(ArrayList<Bullet> arr){
@@ -85,6 +96,15 @@ public abstract class Tank {
                 arr.remove(i);
                 return true;
             }
+        }
+        return false;
+    }
+
+
+    public boolean checkTouch(ArrayList<Brick> arr){
+        for (Brick b :arr) {
+            Rectangle rect = this.getRect().intersection(b.getRect());
+            if(rect.isEmpty()) return true;
         }
         return false;
     }

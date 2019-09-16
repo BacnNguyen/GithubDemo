@@ -16,6 +16,7 @@ public class ReadMap {
     private Image img2;
     private Image img4;
     private Image img5;
+    private Image img9;
 
     public ReadMap(String path, int mapSize) throws IOException {
         File file = new File(path);
@@ -40,11 +41,11 @@ public class ReadMap {
             System.out.println();
         }
 
-        img0 = new ImageIcon(
+        img1 = new ImageIcon(
                 getClass().getResource("brick.png")
         ).getImage();
 
-        img1 = new ImageIcon(
+        img4 = new ImageIcon(
                 getClass().getResource("grass.png")
         ).getImage();
 
@@ -53,12 +54,16 @@ public class ReadMap {
         ).getImage();
 
 
-        img4 = new ImageIcon(
-                getClass().getResource("water.png")
+        img0 = new ImageIcon(
+                getClass().getResource("soil1.png")
         ).getImage();
 
         img5 = new ImageIcon(
                 getClass().getResource("tree.png")
+        ).getImage();
+
+        img9 = new ImageIcon(
+                getClass().getResource("bird.png")
         ).getImage();
 
     }
@@ -81,6 +86,9 @@ public class ReadMap {
 
                 if(maxtr[i][j]==5){
                     g2d.drawImage(img5,j*mapSize,i*mapSize,mapSize,mapSize,null);
+                }
+                if(maxtr[i][j]==9) {
+                    g2d.drawImage(img9,j*mapSize,i*mapSize,2*mapSize,2*mapSize,null);
                 }
             }
         }

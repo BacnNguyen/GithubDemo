@@ -2,7 +2,6 @@ package com.bac.model;
 
 import com.bac.gui.TankFrame;
 import com.bac.until.ImagesLoader;
-import com.sun.deploy.ui.ImageLoader;
 
 import java.awt.*;
 

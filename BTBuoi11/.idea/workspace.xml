@@ -24,20 +24,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/bac/bai2/mapTank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/bac/bai2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\bai2" />
+      <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\bai2\mapTank" />
+      <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\bai2" />
       <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\bai2\mapTank" />
       <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\image" />
       <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\vidu" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\bai2\mapTank" />
-      <recent name="C:\Users\Admin\Desktop\Bac\BTBuoi9\BTBuoi11\src\com\bac\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,8 +96,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Game" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +114,9 @@
       <workItem from="1568439583840" duration="16718000" />
       <workItem from="1568470065106" duration="6434000" />
       <workItem from="1568507823585" duration="1882000" />
-      <workItem from="1568513394585" duration="252000" />
+      <workItem from="1568513394585" duration="2106000" />
+      <workItem from="1568553648458" duration="24000" />
+      <workItem from="1568553756262" duration="3007000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package com.bac.gui;
+package com.bac.model;
 
 import com.bac.model.Tank;
 import com.bac.until.ImagesLoader;

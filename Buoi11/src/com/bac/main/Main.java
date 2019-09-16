@@ -1,11 +1,21 @@
 package com.bac.main;
 
 import com.bac.gui.TankFrame;
+import com.bac.model.Brick;
+import com.bac.model.Map;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         TankFrame tankFrame = new TankFrame();
         tankFrame.setVisible(true);
+//        Map map = new Map("C:\\Users\\Admin\\Desktop\\Bac\\BTBuoi9\\Buoi11\\src\\map\\map2.txt",30);
+//        ArrayList<Brick> arr= map.getArrayBrick();
+//        for (Brick b:arr) {
+//            b.showXY();
+//        }
     }
 }
 
